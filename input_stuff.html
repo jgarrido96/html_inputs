@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input-a-Palooza</title>
+</head>
+<!-- 1. Exploring New HTML5 Input Types -->
+<section>
+    <body>
+        <h3>Welcome to Inputlandia! Where you can input!</h3>
+        <label for="email">Please enter your email:</label>
+        <input type="email" id="email" name="email" placeholder="real_email@aol.com">
+        <input type="submit" value="Sumbit"><br>
+        <label for="quantity">Pick a number between 0 and 42:</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="42" step="1"><br>
+        <label for="date">When was your 21st birthday?</label>
+        <input type="date" id="date" placeholder="04/20/1969"><br>
+        <label for="goatcolor">Select your favorite color:</label>
+        <input type="color" id="goatcolor" name="goatcolor" value="#ff0000" placeholder="Select a color"><br>
+        <label for="rating">Please rate your experience (right for good, left for bad):</label>
+        <input type="range" id="rating" name="rating" min="0" max="10" value="8">
+    </body>
+</section>
+<br>
+<!-- 2. Building a Comprehensive Web Form -->
+<section>
+    <body>
+        <label for="language">Select your favorite Programming Language:</label><br>
+        <input type="radio" name="language" aria-value="Python">
+        <label for="language">Python</label><br>
+        <input type="radio" name="language" aria-value="SQL">
+        <label for="language">SQL</label><br>
+        <input type="radio" name="language" aria-value="HTML">
+        <label for="language">HTML</label><br>
+        <input type="radio" name="language" aria-value="CSS">
+        <label for="language">CSS</label>
+        <br><br>
+        <label for="experience">Let us know your level of experience:</label><br>
+        <input type="radio" name="experience" aria-value="advancec">
+        <label for="experience">Advanced</label><br>
+        <input type="radio" name="experience" aria-value="intermediate">
+        <label for="experience">Intermediate</label><br>
+        <input type="radio" name="experience" aria-value="beginner">
+        <label for="experience">Beginner</label>
+        <br><br>
+        <p>Select your prefered development plarform:</p>
+        <form action="/action_page.php">
+            <input type="checkbox" id="platform1" name="platform1" aria-value="web">
+            <label for="platform1">Web</label><br>
+            <input type="checkbox" id="platform2" name="platform2" aria-value="mobile">
+            <label for="platfrom2">Mobile</label><br>
+            <input type="checkbox" id="platform3" name="platform3" aria-value="desktop">
+            <label for="platform3">Desktop</label><br>
+            
+        </form>
+    </body>
+</section>
+</html>
